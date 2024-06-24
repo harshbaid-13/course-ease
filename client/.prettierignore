@@ -1,0 +1,10 @@
+# Ignore artifacts:
+*.env
+.env
+.env.*
+build
+coverage
+/.next/
+/node_modules
+.vercel
+.env*.local
