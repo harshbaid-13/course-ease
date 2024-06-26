@@ -1,13 +1,13 @@
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Raleway } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"] })
+const raleway = Raleway({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "CourseEase",
-  description: "Made with Love 💞",
+  description: "Made with Love by the CourseEase Team",
 }
 
 export default function RootLayout({
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={raleway.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
